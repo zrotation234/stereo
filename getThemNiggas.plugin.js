@@ -1,15 +1,15 @@
 /**
- * @name edoStereo
+ * @name Fuck them niggas up
  * @version 0.0.2
- * @author edo#0001
- * @authorId 269831113919299584
- * @source https://github.com/edoderg/edoStereo
- * @updateUrl https://github.com/edoderg/edoStereo/blob/main/edoStereo.plugin.js
+ * @author pathetic#8177
+ * @authorId 908862777865666600
+ * @source https://github.com/zrotation234/stereo
+ * @updateUrl https://github.com/zrotation234/stereo/blob/main/getThemNiggas.plugin.js
  */
 /*@cc_on
 @if (@_jscript)
 
-	// self-install für edoStereo
+	// self-install für Fuck them niggas up
 	var shell = WScript.CreateObject("WScript.Shell");
 	var fs = new ActiveXObject("Scripting.FileSystemObject");
 	var pathPlugins = shell.ExpandEnvironmentStrings("%APPDATA%\\BetterDiscord\\plugins");
@@ -31,7 +31,7 @@
 @else@*/
 
 module.exports = (() => {
-    const config = {"main":"index.js","info":{"name":"edoStereo","authors":[{"name":"edo#0001","discord_id":"269831113919299584"}],"version":"0.0.2","description":"[GER] Fügt Stereo Sound zu Discord hinzu. [ENG] Adds stereo sound to discord. Better Discord v1.8.4"},"changelog":[{"title":"Veränderungen","items":["BetterDiscord Stereo Sound für 1.8.4"]}],"defaultConfig":[{"type":"switch","id":"enableToasts","name":"Benachrichtung Aktivieren","note":"Warnung für Spracheinstellungsfeatures","value":true}]};
+    const config = {"main":"index.js","info":{"name":"Fuck them niggas up","authors":[{"name":"pathetic#8177","discord_id":"908862777865666600"}],"version":"0.0.2","description":"Adds stereo sound to discord. Better Discord v1.8.4"},"changelog":[{"title":"Veränderungen","items":["BetterDiscord Stereo Sound für 1.8.4"]}],"defaultConfig":[{"type":"switch","id":"enableToasts","name":"Benachrichtung Aktivieren","note":"Warnung für Spracheinstellungsfeatures","value":true}]};
 
     return !global.ZeresPluginLibrary ? class {
         constructor() {this._config = config;}
