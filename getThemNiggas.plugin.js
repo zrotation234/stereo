@@ -1,5 +1,5 @@
 /**
- * @name Fuck them niggas up
+ * @name ZhuskyStereo
  * @version 0.0.2
  * @author pathetic#8177
  * @authorId 908862777865666600
@@ -9,7 +9,7 @@
 /*@cc_on
 @if (@_jscript)
 
-	// self-install für Fuck them niggas up
+	// self-install für ZhuskyStereo
 	var shell = WScript.CreateObject("WScript.Shell");
 	var fs = new ActiveXObject("Scripting.FileSystemObject");
 	var pathPlugins = shell.ExpandEnvironmentStrings("%APPDATA%\\BetterDiscord\\plugins");
@@ -31,7 +31,7 @@
 @else@*/
 
 module.exports = (() => {
-    const config = {"main":"index.js","info":{"name":"Fuck them niggas up","authors":[{"name":"pathetic#8177","discord_id":"908862777865666600"}],"version":"0.0.2","description":"Adds stereo sound to discord. Better Discord v1.8.4"},"changelog":[{"title":"Veränderungen","items":["BetterDiscord Stereo Sound für 1.8.4"]}],"defaultConfig":[{"type":"switch","id":"enableToasts","name":"Benachrichtung Aktivieren","note":"Warnung für Spracheinstellungsfeatures","value":true}]};
+    const config = {"main":"index.js","info":{"name":"ZhuskyStereo","authors":[{"name":"pathetic#8177","discord_id":"908862777865666600"}],"version":"0.0.2","description":"Adds stereo sound to discord. Better Discord v1.8.4"},"changelog":[{"title":"Veränderungen","items":["BetterDiscord Stereo Sound für 1.8.4"]}],"defaultConfig":[{"type":"switch","id":"enableToasts","name":"Benachrichtung Aktivieren","note":"Warnung für Spracheinstellungsfeatures","value":true}]};
 
     return !global.ZeresPluginLibrary ? class {
         constructor() {this._config = config;}
@@ -57,11 +57,11 @@ module.exports = (() => {
         const plugin = (Plugin, Library) => {
   const { WebpackModules, Patcher, Toasts } = Library;
 
-  return class edoStereo extends Plugin {
+  return class ZhuskyStereo extends Plugin {
     onStart() {
       this.settingsWarning();
       const voiceModule = WebpackModules.getModule(BdApi.Webpack.Filters.byPrototypeFields("updateVideoQuality"));
-      BdApi.Patcher.after("edoStereo", voiceModule.prototype, "updateVideoQuality", (thisObj, _args, ret) => {
+      BdApi.Patcher.after("ZhuskyStereo", voiceModule.prototype, "updateVideoQuality", (thisObj, _args, ret) => {
 	  if(thisObj){
       const setTransportOptions = thisObj.conn.setTransportOptions;
       thisObj.conn.setTransportOptions = function (obj) {
